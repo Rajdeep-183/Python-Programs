@@ -1,11 +1,21 @@
-key = int(input("Enter the key to be found"))
-collection = [2,34,6,87,56,9,31,4,58,35]
+collection = list(map(int, input("Enter the numbers separated by spaces\n").split()))
+# Input a set of integer items separated by spaces
 
+key = int(input("Enter the key to be found\n"))
+# Enter the element to be found
 
 for i in range(len(collection)):
     if collection[i] == key:
         print(key,'found at',i+1,'position')
         break
 else:   
-    print(key,'not found')
+    print(key,'not found in the input collection')
             
+# Approach to be followed
+'''
+We used For loop to iterate inside the collection variable
+the range for iteration will be from 0 to upto the lenth of the collection variable
+We used if statement to check whether the key is equal to any item in the collection
+If the key is present then we get our desired statement with the position of the item and break statement takes the control out from the loop
+If the key is not found then else part will be executed
+'''
