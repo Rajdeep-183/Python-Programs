@@ -1,0 +1,11 @@
+key = int(input("Enter the key to be found"))
+collection = [2,34,6,87,56,9,31,4,58,35]
+
+
+for i in range(len(collection)):
+    if collection[i] == key:
+        print(key,'found at',i+1,'position')
+        break
+else:   
+    print(key,'not found')
+            
