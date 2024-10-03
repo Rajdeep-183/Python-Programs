@@ -1,0 +1,21 @@
+def linear_search_recursive(arr, target, index=0):
+    # Base case: If the index reaches the end of the array
+    if index >= len(arr):
+        return -1  # Target not found
+
+    # Check if the current element is the target
+    if arr[index] == target:
+        return index  # Target found at current index
+
+    # Recursive case: Move to the next element
+    return linear_search_recursive(arr, target, index + 1)
+
+# Example usage:
+arr = [10, 15, 25, 30, 45, 60]
+target = 30
+result = linear_search_recursive(arr, target)
+
+if result != -1:
+    print(f"Element found at index {result}")
+else:
+    print("Element not found")
