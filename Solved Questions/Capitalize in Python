@@ -1,0 +1,33 @@
+#Problem#
+
+You are asked to ensure that the first and last names of people begin with a capital letter in their passports.
+For example, alison heck should be capitalised correctly as Alison Heck.
+Given a full name, your task is to capitalize the name appropriately.
+
+
+#Solution#
+
+def solve(s):
+    ans = s.split(' ')
+    ans1 = (i.capitalize() for i in ans)
+    return  ' '.join(ans1)
+
+
+
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    s = input()
+
+    result = solve(s)
+
+
+
+#Approach#
+
+1. The first thing we did was splitting the string by spaces and storing it in ans variable.
+2. The Capitalize method in Python converts first letter in capital while leave others in small so what we did is used a for loop with capitalize function
+so it will convert all of their first letters in capital.
+3. We returned join method to join the resulting string with spaces and the resulting string will have first letter capital.
+
+
