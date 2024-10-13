@@ -1,0 +1,26 @@
+#Problem#
+
+In this challenge, you will be given 2 integers, n and m. 
+There are  words, which might repeat, in word group A. There are  words belonging to word group B.
+For each m words, check whether the word has appeared in group A or not. Print the indices of each occurrence of m in group A. If it does not appear, print -1.
+
+
+#Solution#
+
+from collections import defaultdict
+n,m = map(int, input().split())
+d = defaultdict(list)
+
+for i in range(n):
+    ans1 = input()
+    d[ans1].append(i+1)
+    
+    
+for j in range(m):
+    ans2 = input()
+    
+    if ans2 in d:
+        print(*d[ans2])
+    else:
+        print(-1)
+   
