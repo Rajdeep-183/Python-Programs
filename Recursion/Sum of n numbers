@@ -1,0 +1,9 @@
+def Sum_of_n(n):
+    Sum = 0
+    if n<=1:
+        return n
+    else:
+        return (n + Sum_of_n(n-1))
+    
+print(Sum_of_n(5))
+print(Sum_of_n(7))
