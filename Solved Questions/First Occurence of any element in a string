@@ -1,0 +1,13 @@
+def First_occurence(n,a):
+    for i in range(len(n)):
+        if n[i] == a:
+            return i
+    return 
+        
+print(First_occurence('rajdeep', 'j'))
+print(First_occurence('harshita', 'a'))
+
+
+#Output#
+2
+1
