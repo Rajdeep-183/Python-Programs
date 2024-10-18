@@ -1,0 +1,21 @@
+def factorial(n):
+    fact = 1
+    if n < 0:
+        print("Factorial does not exist")
+    elif n==0 or n==1:
+        print("factorial is 1")
+    else:
+        for i in range(2,n+1):
+            fact = fact*i
+        print("Factorial is:",fact)
+
+factorial(9)
+factorial(1)
+factorial(-5)
+
+
+#Output#
+
+Factorial is: 362880
+factorial is 1
+Factorial does not exist
