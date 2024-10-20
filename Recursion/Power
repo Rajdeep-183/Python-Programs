@@ -1,0 +1,13 @@
+def power(x,n):
+    if n==0:
+        return 1
+    else:
+        return power(x,n-1)*x
+    
+
+print(power(2,3))
+
+
+#Output#
+
+8
