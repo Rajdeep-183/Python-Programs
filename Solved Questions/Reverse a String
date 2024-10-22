@@ -1,0 +1,13 @@
+def rev_a_string(n):
+    n1=''
+    for i in n:
+        n1 = i+n1
+    return n1
+
+print(rev_a_string("Hello"))
+print(rev_a_string("Rajdeep"))
+
+#Output#
+
+olleH
+peedjaR
