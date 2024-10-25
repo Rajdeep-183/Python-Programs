@@ -1,0 +1,23 @@
+def Pallindrome(n):
+    orig = n
+    rev = 0
+    while n > 0:
+        digit = n%10
+        rev= rev*10 + digit
+        n = n//10
+
+    return orig == rev
+
+
+for i in range(100,201):
+    if Pallindrome(i):
+        print(i,end=' ')
+print()
+for i in range(500,601):
+    if Pallindrome(i):
+        print(i,end=' ')        
+
+#Output#
+
+101 111 121 131 141 151 161 171 181 191 
+505 515 525 535 545 555 565 575 585 595 
