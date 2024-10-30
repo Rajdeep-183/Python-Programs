@@ -1,0 +1,16 @@
+def pallindrome(n, rev):
+    if n==0:
+        return rev
+    
+    else:
+        rev = (rev*10) + (n%10)
+        return pallindrome(n//10, rev)
+    
+
+n = int(input())
+rev = pallindrome(n,0)
+
+if rev == n:
+    print('yes')
+else:
+    print('no')
