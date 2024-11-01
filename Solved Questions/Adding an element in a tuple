@@ -1,0 +1,26 @@
+def tuple_mutation(my_tuple, element):
+
+    lst = list(my_tuple)
+    # we typecast our tuple into a list because lists are mutable
+
+    lst.append(element)
+    # The append method adds the element at the last index into the list
+
+    final_tuple = tuple(lst)
+    # After the element has been added to the list, lets typecast it back into a tuple
+
+    return final_tuple
+
+original_tuple = (1,2,3,4)
+element_to_be_added = 5
+
+final_result = tuple_mutation(original_tuple, element_to_be_added)
+
+print('Original Tuple:', original_tuple)
+print('Resultant Tuple:', final_result)
+
+
+#Output#
+
+Original Tuple: (1, 2, 3, 4)
+Resultant Tuple: (1, 2, 3, 4, 5)
