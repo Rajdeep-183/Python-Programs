@@ -1,0 +1,14 @@
+def Binary_to_Decimal(n):
+    decimal = 0
+    for i in range(len(n)):
+        bit = int(n[-(i+1)])
+        decimal = decimal + bit*(2**i)
+    return decimal
+
+print(Binary_to_Decimal('1010'))
+print(Binary_to_Decimal('1011010'))
+
+#Output#
+
+10
+90
