@@ -1,0 +1,13 @@
+def Binary_to_decimal(n):
+    if n ==  0:
+        return 0
+    else:
+        return n%10 +2*Binary_to_decimal(n//10)
+    
+print(Binary_to_decimal(1010))
+print(Binary_to_decimal(110101))
+
+#Output#
+
+10
+53
