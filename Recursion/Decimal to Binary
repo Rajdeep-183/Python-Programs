@@ -1,0 +1,13 @@
+def Decimal_to_Binary(n):
+    if n<=1:
+        return str(n)
+    else:
+        return Decimal_to_Binary(n//2) + str(n%2)
+    
+print(Decimal_to_Binary(10))
+print(Decimal_to_Binary(35))
+
+#Output#
+
+1010
+100011
