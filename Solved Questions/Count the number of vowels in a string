@@ -1,0 +1,19 @@
+vowels = ['a','e', 'i', 'o', 'u']
+
+def count_vowels(input_str):
+    count = 0
+    for i in range(len(input_str)):
+        if input_str[i] in vowels:
+            count = count + 1
+
+    return count
+
+print(count_vowels('openai'))
+print(count_vowels('hello'))
+print(count_vowels('laptop'))
+
+#Output#
+
+4
+2
+2
