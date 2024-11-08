@@ -1,0 +1,14 @@
+def largest_number_in_list(lst):
+
+    num = lst[0]
+
+    for i in range(len(lst)):
+        if lst[i] > num:
+            num = lst[i]
+    return num
+
+lst = [4,7,2,8,12,9,30,3,6]
+print(largest_number_in_list(lst))
+
+#Output#
+30
