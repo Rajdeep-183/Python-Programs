@@ -1,0 +1,18 @@
+def Palindrome_array(arr):
+    if arr == arr[::-1]:
+        return 'Palindrome'
+    else:
+        return 'Not palindrome'
+    
+arr = list(map(int, input().split()))
+print(Palindrome_array(arr))
+
+#Input#
+1 2 3 4 5
+#Output#
+Not palindrome
+
+#Input#
+1 2 3 2 1
+#Output#
+Palindrome
