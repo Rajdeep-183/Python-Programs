@@ -1,0 +1,22 @@
+def Shift_all_zeros_to_the_beginnng(arr):
+
+    non_zero = len(arr) - 1
+    for i in range(len(arr)-1, -1, -1):
+        if arr[i] != 0:
+            arr[non_zero] = arr[i]
+            non_zero -= 1
+
+    for i in range(0, non_zero + 1):
+        arr[i] = 0
+
+    return arr
+
+arr = list(map(int, input('Enter the elements of array\n').split()))
+print(Shift_all_zeros_to_the_beginnng(arr))
+
+#Input#
+Enter the elements of array
+1 0 8 0 6 9 0 8 7
+
+#Output#
+[0, 0, 0, 1, 8, 6, 9, 8, 7]
