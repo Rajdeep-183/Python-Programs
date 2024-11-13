@@ -18,5 +18,10 @@ print(Shift_all_zeros_to_the_beginnng(arr))
 Enter the elements of array
 1 0 8 0 6 9 0 8 7
 
+Enter the elements of array
+1 2 0 0 4 6 0 8 0
+
 #Output#
 [0, 0, 0, 1, 8, 6, 9, 8, 7]
+
+[0, 0, 0, 0, 1, 2, 4, 6, 8]
