@@ -29,9 +29,14 @@ Tesla = Electric_Car('Tesla', 'Model X', 100)
 Tesla.start()
 Tesla.drive()
 Tesla.charge()
- 
+
+
 #Output#
 The vehicle belong to Tesla
 The Tesla vehicle is starting
 I'm driving Tesla Model X car
 The Tesla Model X is an Electric Vehicle with a battery capacity of 100 kwh
+
+
+
+
