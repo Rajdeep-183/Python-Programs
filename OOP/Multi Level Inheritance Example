@@ -1,0 +1,37 @@
+class Vehicle:
+    def __init__(self, brand):
+        self.brand = brand
+        print(f"The vehicle belong to {brand}")
+    
+    def start(self):
+        print(f"The {self.brand} vehicle is starting")
+
+class car(Vehicle):
+    def __init__(self, brand, model):
+        super().__init__(brand)
+
+        self.model = model
+        
+    def drive(self):
+        print(f"I'm driving {self.brand} {self.model} car")
+
+class Electric_Car(car):
+    def __init__(self, brand, model, battery_capacity):
+        super().__init__(brand, model)
+        self.battery_capacity = battery_capacity
+
+    def charge(self):
+        print(f"The {self.brand} {self.model} is an Electric Vehicle with a battery capacity of {self.battery_capacity} kwh")
+
+
+#Input#
+Tesla = Electric_Car('Tesla', 'Model X', 100)
+Tesla.start()
+Tesla.drive()
+Tesla.charge()
+
+#Output#
+The vehicle belong to Tesla
+The Tesla vehicle is starting
+I'm driving Tesla Model X car
+The Tesla Model X is an Electric Vehicle with a battery capacity of 100 kwh
