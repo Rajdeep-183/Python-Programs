@@ -1,0 +1,49 @@
+class c1:
+    a = 10
+
+    def m1(self,x):
+        self.x = x
+        print(x)
+        print('I printed x')
+
+class c2(c1):
+    b = 5
+
+    def __init__(self,m,n):
+        self.m = m
+        self.n = n
+        print(m, n, m*n)
+        print('I printed m and n')
+
+    def m2(self):
+        print('M2 here')
+
+class c3(c2):
+    c = 7
+
+    def m3(self,p):
+        self.p = p
+        print(p)
+        print('I print p')
+
+
+#Input#
+obj = c3(2,3)
+
+#Output#
+2 3 6
+I printed m and n
+
+#Input#
+obj.m1(5)
+
+#Output#
+5
+I printed x
+
+#Input#
+print(obj.a + obj.b + obj.c)
+
+#Output#
+22
+
