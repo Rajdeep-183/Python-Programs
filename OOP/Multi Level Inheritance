@@ -47,3 +47,9 @@ print(obj.a + obj.b + obj.c)
 #Output#
 22
 
+#Input#
+print(obj.a * obj.b * obj.c)
+
+#Output#
+350
+
