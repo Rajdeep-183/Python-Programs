@@ -1,0 +1,40 @@
+class parent:
+    age1 = 45
+    def parent_beh(self):
+        print("I'm parent of child")
+        print('My age is', parent.age1)
+
+class daughter(parent):
+    age2 = 15
+    def Daughter_beh(self):
+        print("I'm Daughter")
+        print('My age is', daughter.age2)
+
+class son(parent):
+    age3 = 17
+    def Son_beh(self):
+        print("I'm son")
+        print('My age is', son.age3)
+
+
+#Input#
+
+obj = son()
+obj.parent_beh()
+obj.Son_beh()
+
+obj2 = daughter()
+obj2.parent_beh()
+obj2.Daughter_beh()
+
+
+#Output#
+
+I'm parent of child
+My age is 45
+I'm son
+My age is 17
+I'm parent of child
+My age is 45
+I'm Daughter
+My age is 15
