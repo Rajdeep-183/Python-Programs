@@ -26,7 +26,7 @@ obj.Son_beh()
 obj2 = daughter()
 obj2.parent_beh()
 obj2.Daughter_beh()
-
+ 
 
 #Output#
 
