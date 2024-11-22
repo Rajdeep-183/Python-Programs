@@ -14,7 +14,7 @@ class car(Vehicle):
         
     def drive(self):
         print(f"I'm driving {self.brand} {self.model} car")
-
+ 
 class Electric_Car(car):
     def __init__(self, brand, model, battery_capacity):
         super().__init__(brand, model)
