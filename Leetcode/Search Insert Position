@@ -1,0 +1,17 @@
+class Solution:
+    def searchInsert(self, nums: List[int], target: int) -> int:
+        beg = 0
+        high = len(nums) - 1
+
+        while beg <= high:
+            mid = (beg + high)//2
+            if target == nums[mid]:
+                return mid
+
+            if target > nums[mid]:
+                beg = mid + 1
+
+            else:
+                high = mid - 1
+
+        return beg
