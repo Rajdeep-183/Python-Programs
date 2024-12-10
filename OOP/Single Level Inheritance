@@ -17,7 +17,7 @@ obj.m2()
 2
 I'm M1 from class c1
 I'm M2 from c2
-
+ 
 
 class Grandfather:
     Balance = 500
