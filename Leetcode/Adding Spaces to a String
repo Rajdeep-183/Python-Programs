@@ -5,7 +5,7 @@ class Solution:
         n,m = len(s), len(spaces)
 
         while j < m:
-            if i == spaces[j]:
+            if i == spaces[j]: 
                 res.append(" ")
                 j+=1
             res.append(s[i])
