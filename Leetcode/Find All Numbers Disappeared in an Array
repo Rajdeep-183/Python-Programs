@@ -1,0 +1,6 @@
+class Solution:
+    def findDisappearedNumbers(self, nums: List[int]) -> List[int]:
+        n = len(nums)
+        all_no = set(range(1, n+1))
+        nums_set = set(nums)
+        return list(all_no - nums_set)
