@@ -1,0 +1,40 @@
+Question:
+
+Words that contain many consecutive consonants, like "schtschurowskia", are generally considered somewhat hard to pronounce.
+
+We say that a word is hard to pronounce if it contains 
+4
+4 or more consonants in a row; otherwise it is easy to pronounce. 
+For example, "apple" and "polish" are easy to pronounce, but "schtschurowskia" is hard to pronounce.
+
+You are given a string 
+S
+S consisting of 
+N
+N lowercase Latin characters. Determine whether it is easy to pronounce or not based on the rule above — print YES if it is easy to pronounce and NO otherwise.
+
+Solution:
+
+t = int(input())
+for i in range(t):
+    vowel = ['a', 'e', 'i', 'o', 'u']
+    n = int(input())
+    s = input()
+    c = 0 
+    hard = False
+    for x in s:
+        if x not in vowel:
+            c += 1
+            if c >= 4:
+                hard = True
+                break
+        
+        else:
+            c = 0
+            
+            
+    if hard:
+        print('no')
+    else:
+        print('yes')
+            
