@@ -1,0 +1,19 @@
+class Solution:
+    def shortestToChar(self, s: str, c: str) -> List[int]:
+        ans = []
+        ind = []
+        for i in range(len(s)):
+            if s[i] == c:
+                ind.append(i)
+
+        for j in range(len(s)):
+            if s[j] == c:
+                ans.append(0)
+            else:
+                temp = []
+                for x in range(len(ind)):
+                    temp.append(abs(ind[x] - j))
+                    mi = min(temp)
+                ans.append(mi)
+        return ans
+        
